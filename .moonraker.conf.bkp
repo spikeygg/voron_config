@@ -33,7 +33,7 @@ frame_path = /tmp/timelapse/printer
 enable_object_processing = True
 
 [spoolman]
-server = http://127.0.0.1:7912
+server = http://voron:7912
 sync_rate = 5
 
 [update_manager]
@@ -104,6 +104,7 @@ managed_services = klipper
 [mmu_server]
 enable_file_preprocessor = True
 enable_toolchange_next_pos = True
+update_spoolman_location = True
 
 [update_manager Klippain-ShakeTune]
 type = git_repo
