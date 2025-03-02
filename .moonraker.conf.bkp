@@ -45,7 +45,7 @@ type = git_repo
 primary_branch = master
 path = ~/fluidd-config
 origin = https://github.com/fluidd-core/fluidd-config.git
-managed_services = klipper
+is_system_service = False
 
 [update_manager fluidd]
 type = web
@@ -58,7 +58,7 @@ type = git_repo
 primary_branch = master
 path = ~/mainsail-config
 origin = https://github.com/mainsail-crew/mainsail-config.git
-managed_services = klipper
+is_system_service = False
 
 [update_manager mainsail]
 type = web
@@ -99,7 +99,7 @@ path = ~/Happy-Hare
 origin = https://github.com/moggieuk/Happy-Hare.git
 primary_branch = main
 install_script = install.sh
-managed_services = klipper
+is_system_service = False
 
 [mmu_server]
 enable_file_preprocessor = True
@@ -115,7 +115,6 @@ env = ~/klippy-env/bin/python
 requirements = requirements.txt
 install_script = install.sh
 is_system_service = False
-managed_services = klipper
 info_tags = 
 	desc=Cartographer Probe
 
@@ -127,12 +126,12 @@ virtualenv = ~/klippy-env
 requirements = requirements.txt
 system_dependencies = system-dependencies.json
 primary_branch = main
-managed_services = klipper
+is_system_service = False
 
 [update_manager timelapse]
 type = git_repo
 primary_branch = main
 path = ~/moonraker-timelapse
 origin = https://github.com/mainsail-crew/moonraker-timelapse.git
-managed_services = klipper moonraker
+is_system_service = False
 
